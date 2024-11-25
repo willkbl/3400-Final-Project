@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   gravity: 4.65
-  turnSpeed: 45
+  turnSpeed: 90
 --- !u!1 &4138742413727631278
 GameObject:
   m_ObjectHideFlags: 0
