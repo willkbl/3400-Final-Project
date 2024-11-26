@@ -7,7 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
 
     public Canvas canvas;
-    public Camera camera;
+    public Camera currentCamera;
     public Light effectLight;
     
     Collider thisCollider;
@@ -24,7 +24,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         { // if left button pressed...
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = currentCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
