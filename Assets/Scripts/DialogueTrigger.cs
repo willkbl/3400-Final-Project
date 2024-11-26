@@ -27,7 +27,7 @@ public class DialogueTrigger : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log(hit.collider);
+                //Debug.Log(hit.collider);
                 if (hit.collider == thisCollider) {
                     ObjectClicked();
                 }
@@ -38,7 +38,7 @@ public class DialogueTrigger : MonoBehaviour
     void ObjectClicked(){
         // this object was clicked - do something
         canvas.gameObject.SetActive(true);
-        Debug.Log("Clicked");
+        //Debug.Log("Clicked");
     }
  
 }
