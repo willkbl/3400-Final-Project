@@ -361,7 +361,11 @@ PrefabInstance:
       value: bathroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -1018664272722485354, guid: f7dbf031e4197374495e65d4f11102e3, type: 3}
+    - {fileID: 2571546298850640454, guid: f7dbf031e4197374495e65d4f11102e3, type: 3}
+    - {fileID: -5568371526223589888, guid: f7dbf031e4197374495e65d4f11102e3, type: 3}
+    - {fileID: 4463485383994414683, guid: f7dbf031e4197374495e65d4f11102e3, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7dbf031e4197374495e65d4f11102e3, type: 3}
