@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public Canvas canvas;
     public Camera camera;
+    public Light effectLight;
     
     Collider thisCollider;
     
@@ -38,6 +39,7 @@ public class DialogueTrigger : MonoBehaviour
     void ObjectClicked(){
         // this object was clicked - do something
         canvas.gameObject.SetActive(true);
+        effectLight.gameObject.SetActive(false);
         //Debug.Log("Clicked");
     }
  
