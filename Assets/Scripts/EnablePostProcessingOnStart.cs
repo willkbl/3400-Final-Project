@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
+
 
 public class EnableOnStart : MonoBehaviour
 {
+
+    public PostProcessLayer layer;
+
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(true);
+        layer.enabled = true;
     }
 
     // Update is called once per frame
