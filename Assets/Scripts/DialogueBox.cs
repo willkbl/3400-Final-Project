@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
+    public AudioSource textAudio;
+
     private int index;
 
     // Start is called before the first frame update
@@ -42,6 +44,10 @@ public class Dialogue : MonoBehaviour
         //Type each character 1 by 1
         foreach (char c in lines[index].ToCharArray()) {
             textComponent.text += c;
+            if (c != ' ')
+            {
+                textAudio.Play();
+            }
             yield return new WaitForSeconds(textSpeed);
         }
     }
