@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.53
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 551811132}
   - component: {fileID: 551811134}
   - component: {fileID: 551811133}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 694909171}
   - component: {fileID: 694909170}
   - component: {fileID: 694909172}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Dialogue Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,12 +1727,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442619366}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.05799997, y: -1.02, z: -0.04000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2090724443}
+  m_Father: {fileID: 2091515308}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1442619368
 ParticleSystemRenderer:
@@ -1816,7 +1816,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442619366}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1.12
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -1891,7 +1891,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1.32
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1944,7 +1944,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0.31
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -2062,7 +2062,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.17
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2440,10 +2440,10 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 25
+    angle: 49.9
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 1
+    radiusThickness: 0.24
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -2526,7 +2526,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.94
       mode: 0
       spread: 0
       speed:
@@ -2584,7 +2584,7 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
@@ -2645,7 +2645,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 9.74
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -2751,7 +2751,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -2762,18 +2762,18 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: 1
+          value: 0
           inSlope: 1
-          outSlope: 0
+          outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -6565,7 +6565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1654221985}
   currentCamera: {fileID: 963194227}
-  effectLight: {fileID: 2090724444}
+  effectLight: {fileID: 2091515309}
 --- !u!65 &1548007249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6651,7 +6651,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1654221986}
-  - {fileID: 2090724443}
+  - {fileID: 2091515308}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654221982
@@ -6666,7 +6666,7 @@ GameObject:
   - component: {fileID: 1654221985}
   - component: {fileID: 1654221984}
   - component: {fileID: 1654221983}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6954,7 +6954,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2090724442
+--- !u!1 &2091515307
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6962,45 +6962,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2090724443}
-  - component: {fileID: 2090724444}
+  - component: {fileID: 2091515308}
+  - component: {fileID: 2091515309}
   m_Layer: 0
-  m_Name: Light Effect
+  m_Name: Light Effect (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2090724443
+--- !u!4 &2091515308
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090724442}
+  m_GameObject: {fileID: 2091515307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.752}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.05799997, y: 1.02, z: 0.021000028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1442619367}
   m_Father: {fileID: 1548007252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &2090724444
+--- !u!108 &2091515309
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090724442}
+  m_GameObject: {fileID: 2091515307}
   m_Enabled: 1
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.97
-  m_Range: 10
+  m_Intensity: 0.94
+  m_Range: 2.08
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
