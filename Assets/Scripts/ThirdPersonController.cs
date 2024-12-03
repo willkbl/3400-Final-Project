@@ -24,7 +24,7 @@ public class ThirdPersonController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        footstepsSource = GetComponent<AudioSource>();
+        //footstepsSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,15 +45,15 @@ public class ThirdPersonController : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
             {
                 animator.SetInteger("animState", 1); //walk
-            footstepsSource.volume = footstepsVolume;
+            //footstepsSource.volume = footstepsVolume;
         }
             else
             {
                 animator.SetInteger("animState", 0); //idle
-            footstepsSource.volume = 0;
+            //footstepsSource.volume = 0;
         }
 
-        footstepsSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f) + footstepsPitchVariance;
+        //footstepsSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f) + footstepsPitchVariance;
 
     }
 
