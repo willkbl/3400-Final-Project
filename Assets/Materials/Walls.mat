@@ -43,8 +43,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Glossiness: 0.5
-    - _Metallic: 0.402
+    - _Glossiness: 0.293
+    - _Metallic: 0.383
     - _Parallax: 0.08
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
