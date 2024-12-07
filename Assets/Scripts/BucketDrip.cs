@@ -22,7 +22,7 @@ public class BucketDrip : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("Collision!");
+        //Debug.Log("Collision!");
         if (other.CompareTag("WaterDroplet"))
         {
             dropletSound.pitch = UnityEngine.Random.Range(0.9f, 1.1f);

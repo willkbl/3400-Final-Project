@@ -16,7 +16,7 @@ public class ThirdPersonController : MonoBehaviour
     public float turnSpeed = 180f;
 
     AudioSource footstepsSource;
-    public float footstepsVolume = 1.0f;
+    //public float footstepsVolume = 1.0f;
     public float footstepsPitchVariance = 0.0f;
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class ThirdPersonController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        //footstepsSource = GetComponent<AudioSource>();
+        footstepsSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,19 +45,19 @@ public class ThirdPersonController : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
             {
                 animator.SetInteger("animState", 1); //walk
-            //footstepsSource.volume = footstepsVolume;
         }
             else
             {
                 animator.SetInteger("animState", 0); //idle
-            //footstepsSource.volume = 0;
         }
-
-        //footstepsSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f) + footstepsPitchVariance;
-
     }
 
 
+    private void Step()
+    {
+        footstepsSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f) + footstepsPitchVariance;
+        footstepsSource.Play();
+    }
 
 
     }
