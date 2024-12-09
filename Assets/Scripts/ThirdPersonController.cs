@@ -8,6 +8,8 @@ public class ThirdPersonController : MonoBehaviour
     CharacterController controller;
     Animator animator;
     Vector3 input, moveDirection;
+    
+    public AudioClip[] footsteps;
 
     public float moveSpeed = 5f;
     //public float jumpHeight = 10;
@@ -57,6 +59,8 @@ public class ThirdPersonController : MonoBehaviour
     {
         footstepsSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f) + footstepsPitchVariance;
         footstepsSource.Play();
+        int creak = Random.Range(0, 40);
+        AudioSource.PlayClipAtPoint(footsteps[creak], gameObject.transform.position);
     }
 
 
