@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -14,11 +16,16 @@ public class Dialogue : MonoBehaviour
 
     private int index;
 
+    public bool lastDialogue;
+
+    public UnityEngine.UI.Image fade;
+
     // Start is called before the first frame update
     void Start()
     {
         textComponent.text = string.Empty;
         StartDialogue();
+        lastDialogue = false;
     }
 
     // Update is called once per frame
@@ -59,6 +66,16 @@ public class Dialogue : MonoBehaviour
             StartCoroutine(TypeLine());
         } else {
             gameObject.SetActive(false);
+            if (lastDialogue)
+            {
+                fade.CrossFadeAlpha(255f, 3f, false);
+                Invoke("LoadCredits", 3.0f);
+            }
         }
+    }
+
+    void LoadCredits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }
