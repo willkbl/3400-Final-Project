@@ -70,3 +70,21 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+testbuild.zip
+testbuild/Build/testbuild.data.gz
+testbuild/TemplateData/webmemd-icon.png
+testbuild/TemplateData/webgl-logo.png
+testbuild/TemplateData/unity-logo-light.png
+testbuild/TemplateData/unity-logo-dark.png
+testbuild/TemplateData/style.css
+testbuild/TemplateData/progress-bar-full-light.png
+testbuild/TemplateData/progress-bar-full-dark.png
+testbuild/TemplateData/progress-bar-empty-light.png
+testbuild/TemplateData/progress-bar-empty-dark.png
+testbuild/TemplateData/MemoryProfiler.png
+testbuild/TemplateData/fullscreen-button.png
+testbuild/TemplateData/favicon.ico
+testbuild/index.html
+testbuild/Build/testbuild.wasm.gz
+testbuild/Build/testbuild.loader.js
+testbuild/Build/testbuild.framework.js.gz
