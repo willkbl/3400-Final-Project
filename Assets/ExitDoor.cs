@@ -42,7 +42,7 @@ public class ExitDoor : MonoBehaviour
     {
         // this object was clicked - do something
         canvas.gameObject.SetActive(true);
-        Debug.Log("clicked");
+        //Debug.Log("clicked");
         //effectLight.gameObject.SetActive(false);
         //Debug.Log("Clicked");
     }

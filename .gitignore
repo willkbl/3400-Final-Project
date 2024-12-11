@@ -88,3 +88,21 @@ testbuild/index.html
 testbuild/Build/testbuild.wasm.gz
 testbuild/Build/testbuild.loader.js
 testbuild/Build/testbuild.framework.js.gz
+12-11 Build.zip
+12-11 Build/Build/12-11 Build.data.gz
+12-11 Build/Build/12-11 Build.framework.js.gz
+12-11 Build/Build/12-11 Build.loader.js
+12-11 Build/Build/12-11 Build.wasm.gz
+12-11 Build/index.html
+12-11 Build/TemplateData/favicon.ico
+12-11 Build/TemplateData/fullscreen-button.png
+12-11 Build/TemplateData/MemoryProfiler.png
+12-11 Build/TemplateData/progress-bar-empty-dark.png
+12-11 Build/TemplateData/progress-bar-empty-light.png
+12-11 Build/TemplateData/progress-bar-full-dark.png
+12-11 Build/TemplateData/progress-bar-full-light.png
+12-11 Build/TemplateData/style.css
+12-11 Build/TemplateData/unity-logo-dark.png
+12-11 Build/TemplateData/unity-logo-light.png
+12-11 Build/TemplateData/webgl-logo.png
+12-11 Build/TemplateData/webmemd-icon.png

@@ -25,7 +25,11 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = string.Empty;
         StartDialogue();
-        lastDialogue = false;
+        if (fade != null)
+        {
+            fade.canvasRenderer.SetAlpha(0);
+        }
+        //lastDialogue = false;
     }
 
     // Update is called once per frame
@@ -65,12 +69,12 @@ public class Dialogue : MonoBehaviour
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         } else {
-            gameObject.SetActive(false);
             if (lastDialogue)
             {
-                fade.CrossFadeAlpha(255f, 3f, false);
                 Invoke("LoadCredits", 3.0f);
+                fade.CrossFadeAlpha(1, 2.5f, false);
             }
+            gameObject.SetActive(false);
         }
     }
 
